@@ -570,7 +570,6 @@ main {
     align-items: center;
     gap: 15px;
 
-
     li {
         flex-shrink: 0;
         display: flex;
@@ -624,8 +623,102 @@ main {
         height: 20px;
         fill: #1d6106;
     }
-
 }
+
+.manage-claim{
+    width: 100%;
+    max-width: 1700px;
+
+    margin: 20px auto 0;
+    padding: 25px 30px;
+}
+
+.manage-claim-heading{
+    width: 100%;
+    max-width: 1700px;
+    height: 100px;
+
+    margin: 20px auto 0;
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+
+    h1 {
+        color: #1a2e5a;
+        font-size: 30px;
+        font-weight: 700;
+
+        span:nth-child(2) {
+            color: #00A651;
+        }
+    }
+}
+
+.manage-claim-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card-vault {
+    min-width: 33%;
+    max-width: 1700px;
+    min-height: 250px;
+
+    margin: 20px 20px ;
+    padding: 25px 30px;
+
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.insurance-vault-header{
+    position: relative;
+    width: 100%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    h1 {
+        color: #1a2e5a;
+        font-size: 30px;
+        font-weight: 700;
+
+        span:nth-child(2) {
+            color: #00A651;
+        }
+    }
+}
+
+.insurance-vault-header-logo{
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #E6F7EE;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+}
+
+.insurance-vault-header div:nth-child(2){
+    span:nth-child(1){
+        display:block;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    span:nth-child(2){
+        color: #1a2e5a;
+        font-size: 14px;
+    }
+}
+
 
 @media (max-width: 1200px) {
 
