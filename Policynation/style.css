@@ -634,6 +634,7 @@ main {
 }
 
 .manage-claim-heading{
+    position: relative;
     width: 100%;
     max-width: 1700px;
     height: 100px;
@@ -654,6 +655,17 @@ main {
         span:nth-child(2) {
             color: #00A651;
         }
+    }
+
+    p{
+        position: absolute;
+        color:#17689F;
+        font-size: 12px;
+        font-weight: bolder;
+        right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    margin: 0;
     }
 }
 
