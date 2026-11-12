@@ -1577,13 +1577,16 @@ main {
 .trust-policy-content div:last-child{
     border: none;
 }
+
 .card-trust-contain{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    
     min-width: 0;
     flex: 1;
+
 
 
     div:first-child{
@@ -1599,16 +1602,6 @@ main {
         align-content: center;
     }
 
-    div:nth-child(2){
-
-        h3{
-            font-size: 1rem;
-        }
-
-        P{
-            text-wrap: wrap;
-        }
-    }
 
     div img{
         height: 48px;
@@ -1623,8 +1616,97 @@ main {
     }
 }
 
+.card-trust-contain h3,
+.card-trust-contain p {
+    text-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0;
+}
 
 .footer{
-    height: 600px;
+    width: 100%;
     background-color: #EEF6FF;
+
+    font-family: var(--body-font);
+}
+
+.footer-first-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-first-container-header{
+    width: 100%;
+    max-width: 1700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: yellow;
+}
+
+.footer-first-container-cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap:10px;
+    background-color: #f52121;
+    width: 100%;
+    max-width: 1700px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.footer-first-contianer-google{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.footer-first-container-card-list{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-first-container-card{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.footer-info{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr  1fr 1fr 1.5fr;
+    justify-items: center;
+    align-items: start;
+
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-info-policynation{
+    color: #000;
+
+    
+}
+
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.footer-bottom-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
 }
