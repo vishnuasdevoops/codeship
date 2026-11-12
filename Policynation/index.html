@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 
+    <style>
+
+    </style>
+
 </head>
 
 <body>
@@ -80,7 +84,7 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="main-body">
 
         <!-- Hero Section -->
         <section class="hero-section">
@@ -225,9 +229,9 @@
                     <li>
                         <a href="#">
                             View All Insurance
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                                fill="currentColor">
-                                <path d="M12.6,12L8,7.4L9.4,6l6,6l-6,6L8,16.6L12.6,12Z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                fill="#e3e3e3">
+                                <path d="M16.18,13H4V11H16.18l-5.6-5.6L12,4l8,8l-8,8l-1.42-1.4l5.6-5.6Z" />
                             </svg>
                         </a>
                     </li>
@@ -453,133 +457,303 @@
             </div>
         </section>
         <section class="card">
-            <div class="card-style">
-                <div class="card-header">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-folder-lock w-6 h-6 text-[#008744]">
-                            <rect width="8" height="5" x="14" y="17" rx="1"></rect>
-                            <path
-                                d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
-                            </path>
-                            <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
-                        </svg></span>
-                    <div>
-                        <h2>Your Insurance Vault</h2>
-                        <p>All your policies. Safe, organized and always accessible.</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="card-img">
-                        <img src="imgs/insurance-vault.png" alt="Insurance Vault">
-                    </div>
-
-
-                </div>
-                <div class="card-content">
-                    <ul>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-folder-lock w-4 h-4 text-[#008744]">
-                                <rect width="8" height="5" x="14" y="17" rx="1"></rect>
-                                <path
-                                    d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
-                                </path>
-                                <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
-                            </svg><span>Secure digital policy vault</span></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-badge-check w-4 h-4 text-[#008744]">
-                                <path
-                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
-                                </path>
-                                <path d="m9 12 2 2 4-4"></path>
-                            </svg><span>Health cards always at hand</span></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-bell w-4 h-4 text-[#008744]">
-                                <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
-                                <path
-                                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
-                                </path>
-                            </svg><span>Timely renewal reminders</span></li>
-                    </ul>
-                </div>
-                <div class="btn">
-                    <button class="btn-primary"><span>View My Policies</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
-                            fill="#e3e3e3">
-                            <path d="M16.18,13H4V11H16.18l-5.6-5.6L12,4l8,8l-8,8l-1.42-1.4l5.6-5.6Z" />
-                        </svg>
-                    </button>
-
-                </div>
+            <div class="car-title">
+                <h1><span>Manage</span><span> & Claim</span></h1>
+                <a href="#">Everything you need, in one place</a>
             </div>
+            <div class="card-contain-container">
+                <div class="card-container">
+                    <div class="card-style">
+                        <div class="card-header">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-folder-lock w-6 h-6 text-[#008744]">
+                                    <rect width="8" height="5" x="14" y="17" rx="1"></rect>
+                                    <path
+                                        d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
+                                    </path>
+                                    <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
+                                </svg></span>
+                            <div>
+                                <h2>Your Insurance Vault</h2>
+                                <p>All your policies. Safe, organized and always accessible.</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-img">
+                                <img src="imgs/insurance-vault.png" alt="Insurance Vault">
+                            </div>
 
-            <div class="card-style">
-                <div class="card-header">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-folder-lock w-6 h-6 text-[#008744]">
-                            <rect width="8" height="5" x="14" y="17" rx="1"></rect>
-                            <path
-                                d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
-                            </path>
-                            <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
-                        </svg></span>
-                    <div>
-                        <h2>Claims Buddy</h2>
-                        <p>Support from our experts, from claim to settlement.</p>
+
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-folder-lock w-4 h-4 text-[#008744]">
+                                        <rect width="8" height="5" x="14" y="17" rx="1"></rect>
+                                        <path
+                                            d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
+                                        </path>
+                                        <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
+                                    </svg><span>Secure digital policy vault</span></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-badge-check w-4 h-4 text-[#008744]">
+                                        <path
+                                            d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                        </path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg><span>Health cards always at hand</span></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-bell w-4 h-4 text-[#008744]">
+                                        <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                                        <path
+                                            d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+                                        </path>
+                                    </svg><span>Timely renewal reminders</span></li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-primary"><span>View My Policies</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                    fill="#e3e3e3">
+                                    <path d="M16.18,13H4V11H16.18l-5.6-5.6L12,4l8,8l-8,8l-1.42-1.4l5.6-5.6Z" />
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="card-style">
+                        <div class="card-header">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-folder-lock w-6 h-6 text-[#008744]">
+                                    <rect width="8" height="5" x="14" y="17" rx="1"></rect>
+                                    <path
+                                        d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
+                                    </path>
+                                    <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
+                                </svg></span>
+                            <div>
+                                <h2>Claims Buddy</h2>
+                                <p>Support from our experts, from claim to settlement.</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-img">
+                                <img src="imgs/claim-buddy.png" alt="Insurance Vault">
+                            </div>
+
+
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-folder-lock w-4 h-4 text-[#008744]">
+                                        <rect width="8" height="5" x="14" y="17" rx="1"></rect>
+                                        <path
+                                            d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
+                                        </path>
+                                        <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
+                                    </svg><span>Dedicated claim manager</span></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-badge-check w-4 h-4 text-[#008744]">
+                                        <path
+                                            d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                        </path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg><span>Documentation assistance</span></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-bell w-4 h-4 text-[#008744]">
+                                        <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                                        <path
+                                            d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+                                        </path>
+                                    </svg><span>Real-time claim updates</span></li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-primary" style="background-color: #0251d8;"><span>Get Claim
+                                    support</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                    fill="#e3e3e3">
+                                    <path d="M16.18,13H4V11H16.18l-5.6-5.6L12,4l8,8l-8,8l-1.42-1.4l5.6-5.6Z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="card-body">
-                    <div class="card-img">
-                        <img src="imgs/claim-buddy.png" alt="Insurance Vault">
+                <div class="app-contain-card">
+                    <div class="app-card">
+                        <div class="app-card-header">
+                            <div class="app-card-header-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-smartphone w-6 h-6 text-[#7c3aed]">
+                                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                                    <path d="M12 18h.01"></path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <span>Policynation App</span>
+                                <p>Your insurance, simplified.
+                                </p>
+                                <p>
+                                    Right in your pocket.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="app-card-container">
+                            <img src="imgs/policyapp.png" alt="">
+                            <div class="app-card-container-list">
+                                <div class="app-card-list">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-smartphone w-4 h-4 text-[#7c3aed]">
+                                        <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                                        <path d="M12 18h.01"></path>
+                                    </svg>
+                                    <div>
+                                        <div>Manage</div>
+                                        <div>Policies</div>
+                                    </div>
+                                </div>
+                                <div class="app-card-list">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-shield-check w-4 h-4 text-[#7c3aed]">
+                                            <path
+                                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                            </path>
+                                            <path d="m9 12 2 2 4-4"></path>
+                                        </svg></div>
+                                    <div>
+                                        <div>Track</div>
+                                        <div>claims</div>
+                                    </div>
+                                </div>
+                                <div class="app-card-list">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-bell w-4 h-4 text-[#7c3aed]">
+                                            <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                                            <path
+                                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+                                            </path>
+                                        </svg></div>
+                                    <div>
+                                        <div>Get</div>
+                                        <div>reminders</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="app-download">
+                            <div class="app-download-header">
+                                <span class="line"></span>
+                                <h2 class="title">Download the App</h2>
+                                <span class="line"></span>
+                            </div>
+                            <div class="app-download-footer">
+                                <div>
+                                    <img src="imgs/get-app.svg" alt="">
+                                </div>
+                                <div>
+                                    <img src="imgs/appstore.png" alt="">
+                                    <img src="imgs/play-store.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
-                </div>
-                <div class="card-content">
-                    <ul>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-folder-lock w-4 h-4 text-[#008744]">
-                                <rect width="8" height="5" x="14" y="17" rx="1"></rect>
-                                <path
-                                    d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5">
-                                </path>
-                                <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
-                            </svg><span>Dedicated claim manager</span></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-badge-check w-4 h-4 text-[#008744]">
-                                <path
-                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
-                                </path>
-                                <path d="m9 12 2 2 4-4"></path>
-                            </svg><span>Documentation assistance</span></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-bell w-4 h-4 text-[#008744]">
-                                <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
-                                <path
-                                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
-                                </path>
-                            </svg><span>Real-time claim updates</span></li>
-                    </ul>
-                </div>
-                <div class="btn">
-                    <button class="btn-primary"><span>View My Policies</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
-                            fill="#e3e3e3">
-                            <path d="M16.18,13H4V11H16.18l-5.6-5.6L12,4l8,8l-8,8l-1.42-1.4l5.6-5.6Z" />
-                        </svg>
-                    </button>
-
                 </div>
             </div>
         </section>
 
+        <section class="policynation-works">
+            <div class="works-container">
+                <div class="works-container-header">
+                    <h2>How Policy<span>nation</span> Works</h2>
+                    <p>Simple steps from choosing the right plan to support after purchase.</p>
+                </div>
+                <div class="works-container-body">
+                    <div class="works-container-body-flow">
+                        <div class="works-container-content">
+                            <div class="works-container-img">
+                                
+                                <div>
+                                    <span>01</span>
+                                    <img src="imgs/compare-plans.png" alt="">
+                                </div>
+                            </div>
+                            <div class="works-container-txt">
+                                <h3>Compare Plans</h3>
+                                <p>Compare plans from trusted insurers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-direct">
+
+                    </div>
+                    <div class="works-container-body-flow">
+                        <div class="works-container-content">
+                            <div class="works-container-img">
+                                
+                                <div>
+                                    <span>02</span>
+                                    <img src="imgs/daily-tasks.png" alt="">
+                                </div>
+                            </div>
+                            <div class="works-container-txt">
+                                <h3>Choose Your Plan</h3>
+                                <p>Find the coverage that fits your needs, with expert guidance when you need it.</p>
+                            </div>
+                        </div>
+                    </div><div class="works-container-body-flow">
+                        <div class="works-container-content">
+                            <div class="works-container-img">
+                                
+                                <div>
+                                    <span>03</span>
+                                    <img src="imgs/card.png" alt="">
+                                </div>
+                            </div>
+                            <div class="works-container-txt">
+                                <h3>Buy Securely</h3>
+                                <p>Pay the insurer directly with a safe and seamless payment experience.</p>
+                            </div>
+                        </div>
+                    </div><div class="works-container-body-flow">
+                        <div class="works-container-content">
+                            <div class="works-container-img">
+                                <div>
+                                    <span>04</span>
+                                    <img src="imgs/headset.png" alt="">
+                                </div>
+                            </div>
+                            <div class="works-container-txt">
+                                <h3>Stay Protected</h3>
+                                <p>Get lifetime support for claims, renewals and policy service whenever you need it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
