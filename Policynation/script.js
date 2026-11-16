@@ -19,22 +19,15 @@ nextBtn.addEventListener('click', () => {
 });
 
 
-function toggleReview(button) {
-  const reviewBody = button.parentElement;
-  const dots = reviewBody.querySelector(".dots");
-  const moreText = reviewBody.querySelector(".more-text");
+function toggleReview(button){
+  const reviewBody  = button.parentElement;
 
-  if (moreText.style.display === "inline") {
-    moreText.style.display = "none";
-    dots.style.display = "inline";
-    button.textContent = "Read more";
-  } else {
-    moreText.style.display = "inline";
-    dots.style.display = "none";
-    button.textContent = "Read less";
-  }
+  reviewBody.classList.toggle('expanded');
+
+  button.textContent = reviewBody.classList.contains('expanded') 
+    ? 'Read less' 
+    : 'Read more';
 }
-
 
 
 
