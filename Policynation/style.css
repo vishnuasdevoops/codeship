@@ -1716,6 +1716,7 @@ box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.04);
 .review-text {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -1851,14 +1852,11 @@ box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.04);
         padding: 6px 0 0 0;
         cursor: pointer;
     }
+    button:hover {
+       text-decoration: underline;
+    }
 }
 
-.review-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
 
 
 .footer-first-container-card-body.expanded .review-text {
@@ -1870,6 +1868,61 @@ box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.04);
     color: #F59E0B;
 }
 
+.footer-first-contianer-google-top-logo h2, .footer-first-contianer-google-bottom h2{
+    display: flex;
+    gap:1.5px;
+    align-items: baseline;
+    justify-self: center;
+    margin:0;
+}
+
 .google-g{
-    
+    color:#4285F4 ;
+}
+
+.google-o{
+color: #EA4335;
+}
+
+.google-oo{
+    color: #FBBC05;
+}
+
+.google-gg{
+    color:#4285F4;
+}
+
+.google-l{
+    color:#4285F4 ;
+}
+
+.google-e{
+    color: #EA4335;
+}
+
+.justdial-just{
+    color: #116DB6;
+}
+
+.justdail-dial{
+    color:#F26600;
+}
+
+.rating-text{
+    align-self: baseline;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.divider-line{
+    border:none;
+    height: 1px;
+    background-color: #e5e7ed;
+    margin: 0 30px;
+    border-radius: 1px;
+}
+
+.rating-stars svg{
+    color:#F59E0B;
+    fill:#F59E0B;
 }
