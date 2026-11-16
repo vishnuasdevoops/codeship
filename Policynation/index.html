@@ -52,8 +52,10 @@
                 <ul>
                     <li>
                         <a href="/chat" class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-4 h-4 text-[#17689F]">
-                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"
+                                fill="#e3e3e3" aria-hidden="true">
+                                <path
+                                    d="M2,22V4Q2,3.17 2.59,2.59T4,2H20q0.83,0 1.41,0.59T22,4V16q0,0.82-0.59,1.41T20,18H6L2,22Zm3.15-6H20V4H4V17.13L5.15,16ZM4,16V4V16Z" />
                             </svg>
                             <span>Chat</span>
                         </a>
@@ -803,11 +805,19 @@
                     <p>Real stories and experiences from PolicyNation policyholders</p>
                 </div>
                 <div>
-                    <button>Left</button>
-                    <button>Right</button>
+                    <div id="prevBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                            fill="#e3e3e3">
+                            <path d="M10,22L0,12L10,2l1.78,1.77L3.55,12l8.23,8.23L10,22Z" />
+                        </svg>
+                    </div>
+                    <div id="nextBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                            fill="#e3e3e3">
+                            <path d="M8.03,22L6.25,20.23L14.48,12L6.25,3.77L8.03,2l10,10l-10,10Z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-            <div class="footer-first-container-cards">
+            <div class="footer-first-container-cards" id="scrollContainer">
                 <div class="footer-first-contianer-google">
                     <div class="footer-first-contianer-google-top">
                         <div class="footer-first-contianer-google-top-logo">
@@ -899,8 +909,9 @@
                                 Whenever I faced issues, he stepped in immediately and ensured full support. His
                                 dedication, kindness, and commitment felt more like family than professional help.
                                 Heartfelt thanks 🙏 for all the support.</p>
-                            <button type="button" class="readmore-btn" onclick="">Read more</button>
+                            
                         </div>
+                        <button type="button" class="readmore-btn">Read more</button>
                         <div class="footer-first-container-card-footer">
                             <div>
                                 <h2>S</h2>
@@ -1713,6 +1724,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

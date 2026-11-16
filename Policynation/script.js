@@ -1,5 +1,22 @@
-var value = document.getElementsByClassName();
+const container = document.getElementById('scrollContainer');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-function changeMine(){
-    
-}
+const scrollAmount = 320;
+
+prevBtn.addEventListener('click', () => {
+  container.scrollBy({
+    left: -scrollAmount,
+    behavior: 'smooth'
+  });
+});
+
+nextBtn.addEventListener('click', () => {
+  container.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+});
+
+
+
