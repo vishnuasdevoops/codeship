@@ -48,9 +48,7 @@ h6 { font-size: 13px; line-height: 1.4; }
 }
 
 @media (min-width: 480px) {
-  body, p {
-    font-size: 15px;
-  }
+  body, p {font-size: 15px;}
 
   h1 { font-size: 28px; }
   h2 { font-size: 23px; }
@@ -61,9 +59,7 @@ h6 { font-size: 13px; line-height: 1.4; }
 }
 
 @media (min-width: 768px) {
-  body, p {
-    font-size: 16px;
-  }
+  body, p {font-size: 16px;}
 
   h1 { font-size: 34px; }
   h2 { font-size: 28px; }
@@ -74,9 +70,7 @@ h6 { font-size: 13px; line-height: 1.4; }
 }
 
 @media (min-width: 1024px) {
-  body, p {
-    font-size: 16px;
-  }
+  body, p {font-size: 16px;}
 
   h1 { font-size: 42px; }
   h2 { font-size: 32px; }
@@ -87,9 +81,7 @@ h6 { font-size: 13px; line-height: 1.4; }
 }
 
 @media (min-width: 1400px) {
-  body, p {
-    font-size: 17px;
-  }
+  body, p {font-size: 17px;}
 
   h1 { font-size: 48px; }
   h2 { font-size: 36px; }
@@ -105,7 +97,7 @@ h6 { font-size: 13px; line-height: 1.4; }
     font-size: 0.875rem;
 }
 
-.footer-bottom {
+.footer-bottom,.footer-info {
     font-size: 0.8125rem;
 }
 
@@ -1301,7 +1293,8 @@ button {
 
 }
 
-.card {
+.card-section {
+    position: relative;
     width: 100%;
     max-width: 1700px;
     display: flex;
@@ -2071,4 +2064,8 @@ button {
             "brand brand";
         gap: 28px 16px;
     }
+}
+
+.footer{
+    
 }
