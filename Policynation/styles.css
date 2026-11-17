@@ -1,0 +1,2699 @@
+/* =========================================================
+   1. GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;600;700&display=swap');
+
+
+/* =========================================================
+   2. ROOT VARIABLES & RESET
+========================================================= */
+
+:root {
+    --header-font: "Roboto", sans-serif;
+    --body-font: "IBM Plex Sans", sans-serif;
+
+    --primary: #1a2e5a;
+    --secondary: #1767c1;
+    --green: #00A651;
+    --dark-green: #007338;
+
+    --text: #333333;
+    --muted: #647b96;
+
+    --background: #f5f7fb;
+    --white: #ffffff;
+    --border: #edf0f5;
+
+    --radius: 20px;
+    --section-radius: 30px;
+
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+    font-family: var(--body-font);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   3. NAVBAR
+========================================================= */
+
+.navbar-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 10px 3.75%;
+
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1700px;
+    padding: 0 3rem;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    font-family: var(--body-font);
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 2.813rem;
+    width: auto;
+    display: block;
+}
+
+.nav-links ul,
+.nav-action ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    gap: 1.5rem;
+}
+
+.nav-links a,
+.nav-dropdown-btn {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #4a5568;
+    transition: color 0.2s ease;
+}
+
+.nav-dropdown-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-dropdown-btn:hover {
+    color: var(--primary);
+}
+
+.nav-dropdown-btn svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    fill: #818080;
+}
+
+.nav-action ul {
+    gap: 0.7em;
+}
+
+.action-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+
+    padding: 0.15em 0.75em;
+
+    background: var(--white);
+    border: 1px solid #dcd7d7;
+    border-radius: 10px;
+
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.action-btn svg {
+    width: 1.15rem;
+    height: auto;
+    fill: #4f8cb6;
+}
+
+.action-btn:hover {
+    background-color: #f7fafc;
+    border-color: #b8c2cc;
+}
+
+.nav-action ul li:nth-child(2) .action-btn {
+    padding: 0.2em 0.60em;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.nav-action ul li:nth-child(2) .action-btn svg {
+    fill: var(--white);
+}
+
+.nav-action ul li:nth-child(2) .action-btn:hover {
+    background-color: #233c74;
+}
+
+
+/* =========================================================
+   4. MAIN BODY
+========================================================= */
+
+.main-body {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 3.75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--body-font);
+}
+
+
+/* =========================================================
+   5. HERO SECTION
+========================================================= */
+
+.hero-section {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+
+    background-color: var(--white);
+    border-radius: var(--section-radius);
+    overflow: hidden;
+}
+
+.hero-banner {
+    width: 100%;
+    min-height: 425px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            to right,
+            #eaf7f3 0%,
+            rgba(234, 247, 243, 1) 33%,
+            rgba(234, 247, 243, 0.92) 42%,
+            rgba(234, 247, 243, 0.80) 51%,
+            rgba(234, 247, 243, 0) 63%,
+            transparent 72%
+        ),
+        url("imgs/family.png");
+
+    background-size: auto, 70% auto;
+    background-position: center, right center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    width: 50%;
+    padding-left: 80px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.badge {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #1673ad;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+
+    color: #1c315f;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    max-width: 460px;
+
+    color: var(--muted);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   6. TRUST FEATURES
+========================================================= */
+
+.trust-features {
+    width: 100%;
+    min-height: 75px;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+
+    background-color: var(--white);
+}
+
+.feature-item {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 20px;
+    border-right: 1px solid var(--border);
+}
+
+.feature-item:last-child {
+    border-right: none;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.feature-icon svg {
+    width: 23px;
+    height: 23px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.orange {
+    background-color: #fff2df;
+    color: #d76b00;
+}
+
+.green-bg {
+    background-color: #dcfce7;
+    color: #00a65a;
+}
+
+.yellow {
+    background-color: #ffefd8;
+    color: #ed851c;
+}
+
+.red {
+    background-color: #ffe1e2;
+    color: #ff454c;
+}
+
+.purple {
+    background-color: #f3e5ff;
+    color: #a020f0;
+}
+
+.feature-content {
+    min-width: 0;
+}
+
+.feature-content h3 {
+    margin-bottom: 1px;
+
+    color: #172b54;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.feature-content p {
+    color: #71839d;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   7. INSURANCE FEATURE SECTION
+========================================================= */
+
+.feature-section {
+    width: 100%;
+    max-width: 1700px;
+    min-height: 250px;
+
+    margin: 30px auto 0;
+    padding: 25px 30px;
+
+    background-color: var(--white);
+    border-radius: var(--section-radius);
+
+    position: relative;
+}
+
+.feature-subsectionone {
+    width: 100%;
+}
+
+.feature-subsectionone ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-subsectionone ul li:first-child {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-subsectionone ul li:nth-child(2) {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.feature-subsectionone ul li:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.feature-subsectionone .badge,
+.feature-subsectionone .green {
+    margin: 0;
+
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.feature-subsectionone .green {
+    color: var(--green);
+}
+
+.feature-subsectionone ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.feature-subsectionone ul li a svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Insurance cards */
+
+.feature-subsectiontwo {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.feature-subsectiontwo ul {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.feature-subsectiontwo ul li {
+    min-width: 0;
+    min-height: 205px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 10px;
+
+    text-align: center;
+
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feature-subsectiontwo ul li:hover {
+    border-color: #b8d5ee;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feature-subsectiontwo ul li:nth-child(1) {
+    background-color: #f0faf4;
+}
+
+.feature-subsectiontwo ul li img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.feature-subsectiontwo ul li h3 {
+    margin-bottom: 8px;
+
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.feature-subsectiontwo ul li p {
+    font-size: 12px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.feature-subsectiontwo ul li p:hover {
+    background-color: var(--white);
+    color: #000;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-subsectiontwo ul li .compare-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px 10px;
+
+    color: #3f3f3f;
+    background-color: var(--white);
+    border: 1px solid #79797a;
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+.feature-subsectiontwo ul li .compare-link svg {
+    width: 16px;
+    height: 16px;
+    fill: #000;
+    flex-shrink: 0;
+}
+
+.feature-subsectiontwo ul li .compare-link:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   8. INSURANCE PARTNERS
+========================================================= */
+
+.insurance-partners {
+    width: 100%;
+    max-width: 1700px;
+    min-height: 100px;
+
+    margin: 30px auto 0;
+    padding: 25px 30px;
+
+    background-color: var(--white);
+    border-radius: var(--section-radius);
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner-logos {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    width: 15%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 25px;
+    z-index: 3;
+
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 32%,
+        rgba(255, 255, 255, 0.78) 75%,
+        rgba(255, 255, 255, 0.17) 100%
+    );
+}
+
+.heading h2 {
+    margin: 10px 20px;
+
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+/* Separate class to avoid navbar logo conflicts */
+
+.partner-logo-container {
+    max-width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.partner-logo-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.partner-logo-container ul li {
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+    width: 140px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid var(--border);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.partner-logo-container ul li img {
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
+}
+
+.btn-view-all {
+    min-width: 15%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-view-all span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    border: 1px solid #02fd38;
+    border-radius: 20px;
+    padding: 6px 15px;
+
+    color: #1d6106;
+    font-size: 14px;
+}
+
+.btn-view-all span:hover {
+    background-color: var(--white);
+    color: #024e09;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn-view-all svg {
+    height: 20px;
+    fill: #1d6106;
+}
+
+
+/* =========================================================
+   9. MANAGE CLAIM SECTION
+========================================================= */
+
+.manage-claim {
+    width: 100%;
+    max-width: 1700px;
+
+    margin: 20px auto 0;
+    padding: 25px 30px;
+}
+
+.manage-claim-heading {
+    position: relative;
+
+    width: 100%;
+    max-width: 1700px;
+    min-height: 100px;
+
+    margin: 20px auto 0;
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage-claim-heading h1 {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.manage-claim-heading h1 span:nth-child(2) {
+    color: var(--green);
+}
+
+.manage-claim-heading p {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #17689F;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.manage-claim-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card-vault {
+    min-width: 33%;
+    max-width: 1700px;
+    min-height: 250px;
+
+    margin: 20px;
+    padding: 25px 30px;
+
+    background-color: var(--white);
+    border-radius: var(--section-radius);
+}
+
+.insurance-vault-header {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insurance-vault-header h1 {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.insurance-vault-header h1 span:nth-child(2) {
+    color: var(--green);
+}
+
+.insurance-vault-header-logo {
+    padding: 10px;
+    margin: 10px;
+
+    height: 50px;
+    width: 50px;
+
+    background-color: #E6F7EE;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+.insurance-vault-header div:nth-child(2) span:first-child {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.insurance-vault-header div:nth-child(2) span:nth-child(2) {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   10. CARD STYLE
+========================================================= */
+
+.card-style {
+    width: 100%;
+    max-width: 350px;
+
+    padding: 1.5rem;
+    margin: 10px;
+
+    border: 1px solid #ccc;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    box-shadow: 0 3px 5px rgba(40, 230, 7, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-header {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card-header span {
+    height: 50px;
+    width: 50px;
+
+    margin: 0.5rem;
+    padding: 10px;
+
+    background-color: #E6F7EE;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.card-header div {
+    margin: 0.5rem;
+    padding: 10px 0;
+}
+
+.card-header div h2 {
+    font-size: 1.2rem;
+}
+
+.card-header div p {
+    font-size: 0.6rem;
+}
+
+.card-img {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.card-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 10px 0;
+    padding: 12px;
+
+    background-color: #F0FAF4;
+    border-radius: 10px;
+}
+
+.card-content ul {
+    width: 100%;
+}
+
+.card-content ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-content ul li svg {
+    margin: 10px;
+    padding: 5px;
+
+    background-color: #E6F7EE;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+.card-content ul li span {
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    background-color: var(--dark-green);
+    color: var(--white);
+
+    font-weight: bold;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005c2d;
+}
+
+.btn-primary svg {
+    height: 1em;
+    fill: var(--white);
+    margin-left: 3px;
+}
+
+
+/* =========================================================
+   11. CARD SECTION
+========================================================= */
+
+.card-section {
+    position: relative;
+
+    width: 100%;
+    max-width: 1700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+    position: relative;
+}
+
+.car-title span:nth-child(2) {
+    color: var(--dark-green);
+}
+
+.car-title h1 {
+    position: relative;
+}
+
+.car-title a {
+    position: absolute;
+    right: 0;
+
+    margin-right: 20px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    text-decoration: underline;
+    color: #0061b0;
+}
+
+.card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   12. APP DOWNLOAD CARD
+========================================================= */
+
+.app-card {
+    width: 100%;
+    max-width: 400px;
+    min-width: 0;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-color: var(--white);
+}
+
+.app-card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin: 20px;
+}
+
+.app-card-header-svg svg {
+    height: 40px;
+    width: 40px;
+
+    margin: 5px;
+    padding: 8px;
+
+    background-color: #F5F1FF;
+    border-radius: 5px;
+
+    color: #7C3AED;
+}
+
+.app-card-header div p:first-child {
+    display: inline-flex;
+}
+
+.app-card-header div span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.app-card-header div p {
+    font-size: 12px;
+}
+
+.app-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    margin: 20px;
+}
+
+.app-download-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin: 0 25px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #b0c4de;
+}
+
+.title {
+    padding: 0 16px;
+
+    color: #0b2545;
+    font-family: var(--header-font);
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.app-card-container img {
+    width: auto;
+    max-width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.app-card-container-list {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #FAF7FF;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+}
+
+.app-card-list {
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid #f0f0f0;
+}
+
+.app-card-list svg {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.app-card-list div {
+    margin-right: 5px;
+}
+
+.app-card-list div div {
+    font-size: 12px;
+}
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    gap: 20px;
+}
+
+.app-download-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-download-footer div img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.app-download-footer div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.app-download-footer div:nth-child(2) img {
+    height: 30px;
+}
+
+
+/* =========================================================
+   13. APP CONTAINER
+========================================================= */
+
+.card-contain-container {
+    width: 100%;
+    max-width: 1700px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-items: center;
+    gap: 20px;
+}
+
+.app-contain-card {
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+
+/* =========================================================
+   14. HOW POLICY NATION WORKS
+========================================================= */
+
+.policynation-works {
+    width: 100%;
+    max-width: 1700px;
+
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #e5e7eb;
+    background-color: var(--white);
+    border-radius: var(--section-radius);
+}
+
+.works-container {
+    width: 100%;
+}
+
+.works-container-header {
+    text-align: center;
+    margin: 10px;
+}
+
+.works-container-header span {
+    color: var(--green);
+}
+
+.works-container-body {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.works-container-img {
+    margin: 10px;
+}
+
+.works-container-img div {
+    position: relative;
+
+    height: 160px;
+    width: 160px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #EDF6FE;
+}
+
+.works-container-img div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid var(--white);
+    background-color: green;
+    color: var(--white);
+
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.works-container-img div img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.works-container-content {
+    width: 250px;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white);
+    margin: 10px;
+}
+
+.works-container-txt {
+    text-align: center;
+}
+
+.works-container-txt p {
+    text-wrap: wrap;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   15. TRUST POLICY SECTION
+========================================================= */
+
+.trust-policynation {
+    width: 100%;
+    padding: 10px 3.75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white);
+}
+
+.trust-policy-section {
+    width: 100%;
+    max-width: 1700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0.5rem;
+
+    font-family: var(--body-font);
+
+    border: 1px solid #ebebed;
+    border-radius: var(--section-radius);
+}
+
+.trust-policy-header {
+    text-align: center;
+    word-spacing: 2px;
+    font-weight: 500;
+    margin: 1em;
+}
+
+.trust-policy-header h2 span {
+    color: var(--green);
+}
+
+.trust-policy-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 0.25em;
+}
+
+.star {
+    color: #F59E0B;
+}
+
+.trust-policy-content > div:last-child {
+    border: none;
+}
+
+.card-trust-contain {
+    width: 25%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+    margin: 0.5em;
+}
+
+.card-trust-contain > div:first-child {
+    margin: 0.5rem;
+    padding: 0.2em;
+
+    background-color: #E8F8EF;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.card-trust-contain div img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.card-trust-contain h3 {
+    font-size: 1em;
+    line-height: 1.15;
+    padding: 0.1em;
+}
+
+.card-trust-contain p {
+    font-size: 0.5rem;
+}
+
+.card-trust-contain-txt {
+    margin: 20px;
+}
+
+
+/* =========================================================
+   16. FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+
+    padding: 10px 3.75%;
+
+    background-color: #EEF6FF;
+    font-family: var(--body-font);
+}
+
+.footer-col a,
+.footer-desc {
+    font-size: 0.875rem;
+}
+
+.footer-bottom,
+.footer-info {
+    font-size: 0.8125rem;
+}
+
+
+/* Footer reviews */
+
+.footer-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-first-container-header {
+    width: 100%;
+    max-width: 1700px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-first-container-cards {
+    width: 100%;
+    max-width: 1700px;
+
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+
+    padding: 24px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    border-radius: var(--section-radius);
+}
+
+.footer-first-container-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.footer-first-container-card,
+.footer-first-contianer-google {
+    min-width: 320px;
+    max-width: 320px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white);
+    border-radius: 12px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.footer-first-container-card:hover,
+.footer-first-contianer-google:hover {
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.04);
+}
+
+.footer-first-contianer-google {
+    min-width: 280px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer-first-container-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.footer-first-container-card-header svg {
+    height: 18px;
+    width: auto;
+    color: #f59e0b;
+}
+
+.footer-first-container-card-header p {
+    color: #e2e8f0;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.footer-first-container-card-body {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.review-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.footer-first-container-card-body.expanded .review-text {
+    display: block;
+    -webkit-line-clamp: unset;
+}
+
+.footer-first-container-card-body button {
+    padding: 6px 0 0;
+
+    background: none;
+    border: none;
+
+    color: #1d4ed8;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.footer-first-container-card-body button:hover {
+    text-decoration: underline;
+}
+
+.footer-first-container-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: auto;
+}
+
+.footer-first-container-card-footer div:nth-child(2) h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.footer-first-container-card-footer div:nth-child(2) p {
+    font-size: 12px;
+    color: #10b981;
+    font-weight: 500;
+}
+
+.avator {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    background-color: #c2185b;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+
+/* Google and Justdial branding */
+
+.footer-first-contianer-google-top-logo h2,
+.footer-first-contianer-google-bottom h2 {
+    display: flex;
+    gap: 1.5px;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0;
+}
+
+.google-g {
+    color: #4285F4;
+}
+
+.google-o {
+    color: #EA4335;
+}
+
+.google-oo {
+    color: #FBBC05;
+}
+
+.google-gg {
+    color: #4285F4;
+}
+
+.google-l {
+    color: #4285F4;
+}
+
+.google-e {
+    color: #EA4335;
+}
+
+.justdial-just {
+    color: #116DB6;
+}
+
+.justdail-dial {
+    color: #F26600;
+}
+
+.rating-text {
+    align-self: baseline;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.rating-stars svg {
+    color: #F59E0B;
+    fill: #F59E0B;
+}
+
+.divider-line {
+    border: none;
+    height: 1px;
+
+    background-color: #e5e7ed;
+
+    margin: 0 30px;
+    border-radius: 1px;
+}
+
+
+/* Footer navigation */
+
+.footer-info {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1fr 1.1fr 1.4fr;
+
+    grid-template-areas:
+        "brand insurance corporate support resources newsletter";
+
+    gap: 20px;
+
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+
+    background-color: transparent;
+}
+
+.footer-info-policynation {
+    width: 300px;
+    padding: 10px;
+    color: #000;
+}
+
+/* Add these classes to the corresponding HTML footer columns */
+
+.footer-brand {
+    grid-area: brand;
+}
+
+.footer-insurance {
+    grid-area: insurance;
+}
+
+.footer-corporate {
+    grid-area: corporate;
+}
+
+.footer-support {
+    grid-area: support;
+}
+
+.footer-resources {
+    grid-area: resources;
+}
+
+.footer-newsletter {
+    grid-area: newsletter;
+}
+
+
+/* Social media */
+
+.footer-info-policynation-social {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.footer-info-policynation-social div {
+    height: 38px;
+    width: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+
+    border-radius: 50%;
+    background-color: var(--green);
+}
+
+.footer-info-policynation-social div svg {
+    height: 20px;
+    width: 20px;
+    color: var(--white);
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.footer-bottom-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    column-gap: 20px;
+}
+
+
+/* Footer header navigation controls */
+
+.footer-first-container-header div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.footer-first-container-header div:nth-child(2) svg {
+    width: 2rem;
+    height: auto;
+
+    padding: 0.5rem;
+
+    border: 0.06rem solid var(--white);
+    border-radius: 50%;
+
+    fill: #525151;
+
+    background-color: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+}
+
+.readmore-btn {
+    border: none;
+    background-color: transparent;
+    color: blue;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   17. RESPONSIVE DESIGN - 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding: 0 2rem;
+        gap: 15px;
+    }
+
+    .nav-links ul {
+        gap: 1rem;
+    }
+
+    .main-body {
+        padding: 15px 2%;
+    }
+
+    .hero-content {
+        padding-left: 45px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .feature-item {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .feature-content h3 {
+        font-size: 14px;
+    }
+
+    .feature-content p {
+        font-size: 10px;
+    }
+
+    .feature-icon {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .feature-subsectiontwo ul {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer-info {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+            "insurance corporate support"
+            "resources newsletter newsletter"
+            "brand brand brand";
+    }
+}
+
+
+/* =========================================================
+   18. RESPONSIVE DESIGN - 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 0 1.5rem;
+    }
+
+    .nav-links ul {
+        gap: 0.8rem;
+    }
+
+    .nav-links a,
+    .nav-dropdown-btn {
+        font-size: 13px;
+    }
+
+    .manage-claim-content {
+        flex-wrap: wrap;
+    }
+
+    .card-vault {
+        min-width: 280px;
+    }
+
+    .insurance-partners {
+        overflow-x: auto;
+    }
+
+    .partner-logos {
+        min-width: 700px;
+    }
+
+    .footer-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        grid-template-areas:
+            "insurance corporate"
+            "support resources"
+            "newsletter newsletter"
+            "brand brand";
+    }
+}
+
+
+/* =========================================================
+   19. RESPONSIVE DESIGN - 850px
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-banner {
+        min-height: 450px;
+        background-size: auto, 75% 100%;
+    }
+
+    .hero-content {
+        width: 60%;
+        padding-left: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .trust-features {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .feature-item {
+        border-right: none;
+    }
+
+    .card-contain-container {
+        grid-template-columns: 1fr;
+    }
+
+    .works-container-body {
+        flex-wrap: wrap;
+    }
+
+    .trust-policy-content {
+        flex-wrap: wrap;
+    }
+
+    .card-trust-contain {
+        width: 45%;
+    }
+
+    .manage-claim-heading {
+        min-height: auto;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .manage-claim-heading p {
+        position: static;
+        transform: none;
+    }
+
+    .app-card {
+        max-width: 450px;
+    }
+}
+
+
+/* =========================================================
+   20. RESPONSIVE DESIGN - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .main-body {
+        padding: 10px 2%;
+    }
+
+    .hero-section {
+        border-radius: 20px;
+    }
+
+    .feature-section {
+        padding: 20px;
+    }
+
+    .feature-subsectiontwo ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .insurance-partners {
+        min-height: 100px;
+    }
+
+    .manage-claim {
+        padding: 15px;
+    }
+
+    .manage-claim-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-vault {
+        width: 100%;
+        max-width: 500px;
+        min-width: 0;
+        margin: 10px 0;
+    }
+
+    .policynation-works {
+        padding: 20px;
+    }
+
+    .trust-policy-content {
+        justify-content: center;
+    }
+
+    .card-trust-contain {
+        width: 45%;
+    }
+
+    .app-contain-card {
+        padding: 25px;
+    }
+
+    .footer-first-container-header {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .footer-first-container-cards {
+        padding: 15px;
+    }
+}
+
+
+/* =========================================================
+   21. RESPONSIVE DESIGN - 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* Navbar */
+
+    .navbar-header {
+        padding: 8px 3%;
+    }
+
+    .navbar {
+        height: 65px;
+        padding: 0 15px;
+        gap: 8px;
+    }
+
+    .logo img {
+        height: 38px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-action {
+        margin-left: auto;
+    }
+
+    .nav-action ul {
+        gap: 7px;
+    }
+
+    .action-btn span {
+        display: none;
+    }
+
+    .action-btn {
+        width: 36px;
+        height: 36px;
+
+        padding: 7px;
+
+        border-radius: 50%;
+    }
+
+    .action-btn svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .nav-action ul li:nth-child(2) .action-btn {
+        width: 36px;
+        height: 36px;
+
+        padding: 7px;
+
+        border-radius: 50%;
+    }
+
+
+    /* Main body */
+
+    .main-body {
+        padding: 10px;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        border-radius: 18px;
+    }
+
+    .hero-banner {
+        min-height: 540px;
+
+        align-items: flex-start;
+
+        background-image:
+            linear-gradient(
+                to bottom,
+                rgba(234, 247, 243, 0.98) 0%,
+                rgba(234, 247, 243, 0.95) 43%,
+                rgba(234, 247, 243, 0.15) 100%
+            ),
+            url("imgs/family.png");
+
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 35px 22px;
+    }
+
+    .badge {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+
+    /* Trust features */
+
+    .trust-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        padding: 20px 12px;
+    }
+
+    .feature-item {
+        padding: 5px;
+        gap: 8px;
+        border: none;
+    }
+
+    .feature-icon {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .feature-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .feature-content h3 {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .feature-content p {
+        font-size: 10px;
+    }
+
+
+    /* Insurance section */
+
+    .feature-section {
+        margin-top: 20px;
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    .feature-subsectionone ul {
+        flex-wrap: wrap;
+    }
+
+    .feature-subsectionone ul li:first-child {
+        justify-content: center;
+    }
+
+    .feature-subsectionone ul li:nth-child(2) {
+        position: static;
+        margin-right: 0;
+    }
+
+    .feature-subsectionone .badge,
+    .feature-subsectionone .green {
+        font-size: 18px;
+    }
+
+    .feature-subsectionone ul li a {
+        font-size: 12px;
+    }
+
+    .feature-subsectiontwo {
+        margin-top: 20px;
+    }
+
+    .feature-subsectiontwo ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .feature-subsectiontwo ul li {
+        min-height: 185px;
+        padding: 15px 8px;
+    }
+
+    .feature-subsectiontwo ul li img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .feature-subsectiontwo ul li h3 {
+        font-size: 15px;
+    }
+
+    .feature-subsectiontwo ul li .compare-link {
+        font-size: 11px;
+        white-space: normal;
+    }
+
+
+    /* Insurance partners */
+
+    .insurance-partners {
+        height: auto;
+        min-height: 100px;
+
+        padding: 15px;
+
+        overflow-x: auto;
+    }
+
+    .partner-logos {
+        min-width: max-content;
+        gap: 15px;
+    }
+
+    .heading {
+        min-width: 100px;
+    }
+
+    .partner-logo-container {
+        max-width: none;
+    }
+
+    .partner-logo-container ul li {
+        width: 110px;
+        height: 60px;
+    }
+
+    .btn-view-all {
+        min-width: 100px;
+    }
+
+
+    /* Manage claim */
+
+    .manage-claim {
+        padding: 15px;
+    }
+
+    .manage-claim-heading {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .manage-claim-heading h1 {
+        font-size: 24px;
+    }
+
+    .manage-claim-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-vault {
+        width: 100%;
+        min-width: 0;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .insurance-vault-header h1 {
+        font-size: 23px;
+    }
+
+
+    /* Cards */
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-style {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .car-title {
+        margin: 20px 0;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .car-title a {
+        position: static;
+        margin: 0;
+    }
+
+    .card-contain-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .app-contain-card {
+        padding: 20px;
+    }
+
+    .app-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .app-card-container-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .app-card-list {
+        border-right: none;
+    }
+
+    .app-download-footer {
+        flex-wrap: wrap;
+    }
+
+
+    /* How it works */
+
+    .policynation-works {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .works-container-body {
+        flex-direction: column;
+    }
+
+    .works-container-content {
+        width: 100%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+
+    /* Trust policy */
+
+    .trust-policy-section {
+        border-radius: 20px;
+    }
+
+    .trust-policy-content {
+        justify-content: center;
+    }
+
+    .card-trust-contain {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .card-trust-contain-txt {
+        margin: 10px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 10px 3%;
+    }
+
+    .footer-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        grid-template-areas:
+            "insurance corporate"
+            "support resources"
+            "newsletter newsletter"
+            "brand brand";
+
+        gap: 15px;
+    }
+
+    .footer-info-policynation {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        margin: 10px 0;
+        padding: 10px;
+
+        gap: 15px;
+    }
+
+    .footer-bottom-list ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .footer-first-container-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-first-container-cards {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .footer-first-container-card {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 18px;
+    }
+
+    .footer-first-contianer-google {
+        min-width: 260px;
+    }
+}
+
+
+/* =========================================================
+   22. RESPONSIVE DESIGN - 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .navbar-header {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .logo img {
+        height: 33px;
+    }
+
+    .nav-action ul {
+        gap: 5px;
+    }
+
+    .action-btn,
+    .nav-action ul li:nth-child(2) .action-btn {
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+    }
+
+    .hero-content {
+        padding: 30px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .trust-features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-subsectionone .badge,
+    .feature-subsectionone .green {
+        font-size: 16px;
+    }
+
+    .feature-subsectionone ul li a {
+        font-size: 10px;
+    }
+
+    .feature-subsectiontwo ul {
+        gap: 8px;
+    }
+
+    .feature-subsectiontwo ul li {
+        min-height: 170px;
+    }
+
+    .feature-subsectiontwo ul li img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-vault {
+        width: 100%;
+        min-width: 0;
+        padding: 15px;
+    }
+
+    .insurance-vault-header h1 {
+        font-size: 20px;
+    }
+
+    .app-card-container {
+        margin: 12px;
+    }
+
+    .app-download-header {
+        margin: 0;
+    }
+
+    .title {
+        font-size: 1rem;
+        padding: 0 8px;
+    }
+
+    .footer-info {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "insurance"
+            "corporate"
+            "support"
+            "resources"
+            "newsletter"
+            "brand";
+    }
+
+    .footer-info-container {
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================================
+   23. EXTRA SMALL SCREENS - 300px
+========================================================= */
+
+@media (max-width: 300px) {
+
+    .navbar {
+        padding: 0 5px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .feature-subsectiontwo ul {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-info {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-style {
+        padding: 12px;
+    }
+}
+
+
+/* =========================================================
+   END OF STYLESHEET
+========================================================= */
+
+
+.logo marquee ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

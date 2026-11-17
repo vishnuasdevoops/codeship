@@ -28,6 +28,3 @@ function toggleReview(button){
     ? 'Read less' 
     : 'Read more';
 }
-
-
-

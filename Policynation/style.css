@@ -1770,14 +1770,6 @@ button {
 }
 
 
-.footer-info {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1.2fr 1fr 1.1fr 1.4fr;
-    flex-shrink: 1;
-    padding: 1rem;
-    margin: 1rem 0;
-    width: 100%;
-}
 
 .footer-info-container {
     background-color: yellow;
@@ -1787,17 +1779,13 @@ button {
     gap: 20px;
 }
 
-.footer-info-policynation {
-    width: 300px;
-    padding: 10px;
-    color: #000;
-}
 
 .footer-bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: 20px;
     padding: 0 20px;
 }
@@ -1969,14 +1957,21 @@ button {
     }
 }
 
+.footer-info{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.2fr;
+    grid-template-areas: "brand insurance corporate support resources newsletter";
+}
+
 @media (max-width: 1024px) {
     .footer-info {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "brand brand"
             "insurance corporate"
             "support resources"
-            "newsletter newsletter";
+            "newsletter newsletter"
+            "brand brand";
     }
 }
 
@@ -1992,3 +1987,4 @@ button {
         gap: 28px 16px;
     }
 }
+
