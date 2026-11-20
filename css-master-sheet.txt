@@ -1,0 +1,319 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    CSS PROPERTIES ULTIMATE MASTER REFERENCE                  ║
+║          Comprehensive Functional Categories, Sub-Properties & Values        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 01. LAYOUT, DISPLAY & POSITIONING                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Display & Document Flow
+  │   ├── display          : block | inline | inline-block | flex | inline-flex |
+  │   │                      grid | inline-grid | flow-root | contents | none
+  │   ├── visibility       : visible | hidden | collapse
+  │   ├── overflow         : visible | hidden | clip | scroll | auto
+  │   ├── overflow-x / -y  : visible | hidden | clip | scroll | auto
+  │   ├── overscroll-behav : overscroll-behavior (auto | contain | none)
+  │   ├── float            : left | right | none | inline-start | inline-end
+  │   └── clear            : left | right | both | none | inline-start | inline-end
+  │
+  ├── Positioning & Coordinates
+  │   ├── position         : static | relative | absolute | fixed | sticky
+  │   ├── inset            : <top> <right> <bottom> <left> (shorthand)
+  │   ├── inset-inline     : <start> <end> (logical left & right)
+  │   ├── inset-block      : <start> <end> (logical top & bottom)
+  │   ├── top / bottom     : auto | <length> | <percentage>
+  │   └── left / right     : auto | <length> | <percentage>
+  │
+  └── Stacking & Containment
+      ├── z-index          : auto | <integer> (e.g., -1, 0, 10, 999)
+      ├── isolation        : auto | isolate (creates a new stacking context)
+      └── contain          : none | strict | content | size | layout | style | paint
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 02. FLEXBOX (1D ONE-DIMENSIONAL LAYOUT)                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Flex Container Properties
+  │   ├── display          : flex | inline-flex
+  │   ├── flex-direction   : row | row-reverse | column | column-reverse
+  │   ├── flex-wrap        : nowrap | wrap | wrap-reverse
+  │   ├── flex-flow        : <flex-direction> <flex-wrap>
+  │   ├── justify-content  : flex-start | flex-end | center | space-between |
+  │   │                      space-around | space-evenly | start | end
+  │   ├── align-items      : stretch | flex-start | flex-end | center | baseline
+  │   ├── align-content    : stretch | flex-start | flex-end | center |
+  │   │                      space-between | space-around | space-evenly
+  │   └── gap              : <row-gap> <column-gap> (row-gap, column-gap)
+  │
+  └── Flex Item Properties
+      ├── flex             : <flex-grow> <flex-shrink> <flex-basis> | none | auto
+      ├── flex-grow        : 0 | <number> (e.g., 1, 2)
+      ├── flex-shrink      : 1 | 0 | <number>
+      ├── flex-basis       : auto | 0 | content | <length> | <percentage>
+      ├── align-self       : auto | stretch | flex-start | flex-end | center | baseline
+      └── order            : 0 | <integer> (e.g., -1, 1, 2)
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 03. CSS GRID (2D TWO-DIMENSIONAL LAYOUT)                                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Grid Container Properties
+  │   ├── display          : grid | inline-grid
+  │   ├── Explicit Tracks  : grid-template-columns, grid-template-rows
+  │   │                      (values: px | % | fr | auto | repeat() | minmax())
+  │   ├── Named Areas      : grid-template-areas ("head head" "nav main")
+  │   ├── Shorthand Grid   : grid-template (<rows> / <columns> | <areas>)
+  │   ├── Implicit Tracks  : grid-auto-columns, grid-auto-rows
+  │   ├── Auto Placement   : grid-auto-flow (row | column | dense | row dense)
+  │   ├── Gutters          : gap, row-gap, column-gap
+  │   ├── Track Alignment  : justify-content, align-content, place-content
+  │   └── Cell Alignment   : justify-items, align-items, place-items
+  │
+  └── Grid Item Properties
+      ├── Column Placement : grid-column (<start> / <end> | span <n>),
+      │                      grid-column-start, grid-column-end
+      ├── Row Placement    : grid-row (<start> / <end> | span <n>),
+      │                      grid-row-start, grid-row-end
+      ├── Area Assignment  : grid-area (<name> | <r-start>/<c-start>/<r-end>/<c-end>)
+      └── Self Alignment   : justify-self, align-self, place-self
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 04. MULTI-COLUMN LAYOUT                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Column Structure
+  │   ├── columns          : <column-width> <column-count> (shorthand)
+  │   ├── column-count     : auto | <integer> (e.g., 2, 3)
+  │   ├── column-width     : auto | <length> (e.g., 250px)
+  │   └── column-gap       : normal | <length> (e.g., 2rem)
+  │
+  └── Column Rules & Spanning
+      ├── column-rule      : <width> <style> <color> (shorthand divider line)
+      ├── Rule Parts       : column-rule-width, column-rule-style, column-rule-color
+      ├── column-span      : none | all (allows heading to span across all cols)
+      └── column-fill      : balance | auto
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 05. BOX MODEL, SIZING & SPACING                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Box Sizing & Dimensions
+  │   ├── box-sizing       : content-box | border-box
+  │   ├── width / height   : auto | <length> | <percentage> | min-content |
+  │   │                      max-content | fit-content
+  │   ├── Min Constraints  : min-width, min-height (0 | <length> | <percentage>)
+  │   ├── Max Constraints  : max-width, max-height (none | <length> | <percentage>)
+  │   ├── Logical Sizing   : inline-size, block-size, min-inline-size, max-inline-size
+  │   └── aspect-ratio     : auto | <width> / <height> (e.g., 16 / 9, 1 / 1)
+  │
+  ├── Margin (Outer Spacing)
+  │   ├── margin           : <top> <right> <bottom> <left> (supports auto & negative)
+  │   ├── Physical Sides   : margin-top, margin-right, margin-bottom, margin-left
+  │   └── Logical Sides    : margin-inline (start/end), margin-block (start/end)
+  │
+  └── Padding (Inner Spacing)
+      ├── padding          : <top> <right> <bottom> <left>
+      ├── Physical Sides   : padding-top, padding-right, padding-bottom, padding-left
+      └── Logical Sides    : padding-inline (start/end), padding-block (start/end)
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 06. TYPOGRAPHY & TEXT FORMATTING                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Font Properties
+  │   ├── font             : <style> <variant> <weight> <size>/<line-height> <family>
+  │   ├── font-family      : "Inter", "Roboto", system-ui, sans-serif, serif, monospace
+  │   ├── font-size        : xx-small..xx-large | <length> | <percentage> | clamp()
+  │   ├── font-weight      : 100..900 | normal (400) | bold (700) | lighter | bolder
+  │   ├── font-style       : normal | italic | oblique <angle>
+  │   ├── font-variant     : normal | small-caps | all-small-caps | tabular-nums
+  │   ├── font-stretch     : normal | condensed | expanded | 50%..200%
+  │   └── line-height      : normal | <number> (e.g., 1.5) | <length> | <percentage>
+  │
+  ├── Text Alignment, Decoration & Case
+  │   ├── color            : currentColor | #hex | rgb() | hsl() | oklch()
+  │   ├── text-align       : left | right | center | justify | start | end
+  │   ├── text-align-last  : auto | left | right | center | justify
+  │   ├── text-decoration  : <line> <style> <color> <thickness>
+  │   ├── Decoration Parts : text-decoration-line (none|underline|overline|line-through),
+  │   │                      text-decoration-style (solid|double|dotted|dashed|wavy),
+  │   │                      text-decoration-color, text-decoration-thickness,
+  │   │                      text-underline-offset
+  │   ├── text-transform   : none | uppercase | lowercase | capitalize | full-width
+  │   └── vertical-align   : baseline | sub | super | top | middle | bottom
+  │
+  └── Spacing, Wrapping & Overflow
+      ├── letter-spacing   : normal | <length> (e.g., 0.05em, -0.02em)
+      ├── word-spacing     : normal | <length>
+      ├── text-indent      : <length> | <percentage>
+      ├── white-space      : normal | nowrap | pre | pre-wrap | pre-line | break-spaces
+      ├── word-break       : normal | break-all | keep-all | break-word
+      ├── overflow-wrap    : normal | break-word | anywhere
+      ├── hyphens          : none | manual | auto
+      ├── text-overflow    : clip | ellipsis
+      └── writing-mode     : horizontal-tb | vertical-rl | vertical-lr
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 07. APPEARANCE, COLORS & BACKGROUNDS                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+  ├── Backgrounds
+  │   ├── background       : <color> <image> <position>/<size> <repeat> <attachment>
+  │   ├── background-color : transparent | currentColor | #hex | rgb() | hsl()
+  │   ├── background-image : none | url() | linear-gradient() | radial-gradient() |
+  │   │                      conic-gradient() | repeating-linear-gradient()
+  │   ├── background-size  : auto | cover | contain | <width> <height>
+  │   ├── background-pos   : background-position (center | top | bottom | left | right | %)
+  │   ├── background-attach: background-attachment (scroll | fixed | local)
+  │   ├── background-repeat: repeat | no-repeat | repeat-x | repeat-y | space | round
+    │   ├── background-clip  : border-box | padding-box | content-box | text
+    │   └── background-origin: border-box | padding-box | content-box
+    │
+    ├── Borders & Outlines
+    │   ├── border           :   
+    │   ├── Border Widths    : border-width (thin | medium | thick | )
+    │   ├── Border Styles    : border-style (none | solid | dashed | dotted | double | groove)
+    │   ├── Border Colors    : border-color ()
+    │   ├── Individual Sides : border-top, border-right, border-bottom, border-left, border-inline, border-block                     
+    │   ├── border-radius    : (px | % | 9999px)
+    │   ├── Border Images    : border-image, border-image-source, border-image-slice
+    │   └── Outlines         : outline (  ), outline-width,
+    │                          outline-style, outline-color, outline-offset
+    │
+    └── Shadows, Opacity, Filters & Blending
+    ├── opacity          : 0..1 (e.g., 0, 0.5, 1)
+    ├── box-shadow       : [inset]     
+    ├── text-shadow      :    
+    ├── filter           : none | blur() | brightness() | contrast() | grayscale() |
+    │                      hue-rotate() | invert() | saturate() | sepia() | drop-shadow()
+    ├── backdrop-filter  : none | blur() | brightness() | saturate() (frosted glass)
+    ├── mix-blend-mode   : normal | multiply | screen | overlay | darken | lighten |
+    │                      color-dodge | difference | exclusion
+    ├── background-blend : background-blend-mode (normal | multiply | screen | overlay)
+    └── clip-path        : none | circle() | ellipse() | inset() | polygon() | path()
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ 08. IMAGES, SVG & REPLACED MEDIA                                             │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    ├── Media Fitting & Positioning
+    │   ├── object-fit       : fill | contain | cover | none | scale-down
+    │   ├── object-position  : center | top | bottom | left | right |  
+    │   └── image-rendering  : auto | crisp-edges | pixelated
+    │
+    └── SVG Styling Properties
+    ├── Fill & Stroke    : fill, fill-opacity, stroke, stroke-width, stroke-opacity
+    └── Stroke Details   : stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ 09. TRANSFORMS, TRANSITIONS & KEYFRAME ANIMATIONS                            │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    ├── 2D & 3D Transforms
+    │   ├── transform        : none | translate() | translateX/Y/Z() | translate3d() |
+    │   │                      rotate() | rotateX/Y/Z() | rotate3d() |
+    │   │                      scale() | scaleX/Y/Z() | skew() | skewX/Y() | matrix()
+    │   ├── Individual Props : translate, rotate, scale (standalone CSS properties)
+    │   ├── transform-origin : center | top left |   
+    │   ├── transform-style  : flat | preserve-3d
+    │   ├── perspective      : none |  (e.g., 800px, 1000px)
+    │   ├── perspective-orig : perspective-origin (center |  )
+    │   └── backface-vis.    : backface-visibility (visible | hidden)
+    │
+    ├── Transitions
+    │   ├── transition       :    
+    │   ├── transition-prop  : transition-property (all | none | opacity | transform)
+    │   ├── transition-dur   : transition-duration ( e.g., 0.3s, 300ms)
+    │   ├── transition-timing: ease | linear | ease-in | ease-out | ease-in-out |
+    │   │                      cubic-bezier(x1, y1, x2, y2) | steps(n)
+    │   └── transition-delay :  (e.g., 0s, 150ms)
+    │
+    └── Keyframe Animations
+    ├── @keyframes       : @keyframes  { 0% {...} 50% {...} 100% {...} }
+    ├── animation        :        
+    ├── animation-name   : none | 
+    ├── animation-dur    : animation-duration ( e.g., 1s, 500ms)
+    ├── animation-timing : ease | linear | ease-in-out | cubic-bezier() | steps()
+    ├── animation-delay  :  (supports negative values to start mid-cycle)
+    ├── animation-count  : animation-iteration-count ( | infinite)
+    ├── animation-dir    : animation-direction (normal | reverse | alternate | alternate-reverse)
+    ├── animation-fill   : animation-fill-mode (none | forwards | backwards | both)
+    ├── animation-state  : animation-play-state (running | paused)
+    └── will-change      : auto | scroll-position | contents | transform | opacity
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ 10. UI, FORMS, LISTS, TABLES & INTERACTION                                   │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    ├── User Interaction & Form Controls
+    │   ├── cursor           : auto | default | pointer | grab | grabbing | text |
+    │   │                      move | not-allowed | wait | crosshair | zoom-in
+    │   ├── pointer-events   : auto | none (pass clicks through elements)
+    │   ├── user-select      : auto | none | text | all
+    │   ├── touch-action     : auto | none | pan-x | pan-y | manipulation
+    │   ├── appearance       : none | auto (strips native OS styling on inputs/buttons)
+    │   ├── accent-color     : auto |  (colors checkboxes, radios, range, progress)
+    │   ├── caret-color      : auto | transparent |  (text input blinking cursor)
+    │   └── resize           : none | both | horizontal | vertical | block | inline
+    │
+    ├── Scrolling & Scroll Snap
+    │   ├── scroll-behavior  : auto | smooth
+    │   ├── scroll-margin    : scroll-margin, scroll-margin-top/right/bottom/left
+    │   ├── scroll-padding   : scroll-padding, scroll-padding-top/right/bottom/left
+    │   ├── scroll-snap-type : none | x mandatory | y mandatory | x proximity | y proximity
+    │   ├── scroll-snap-align: none | start | end | center
+    │   └── scroll-snap-stop : normal | always
+    │
+    ├── Lists & Counters
+    │   ├── list-style       :   
+    │   ├── list-style-type  : none | disc | circle | square | decimal | lower-alpha
+    │   ├── list-style-pos   : list-style-position (inside | outside)
+    │   ├── list-style-image : none | url()
+    │   └── CSS Counters     : counter-reset, counter-increment, content: counter()
+    │
+    └── Tables
+    ├── border-collapse  : collapse | separate
+    ├── border-spacing   :   (when border-collapse: separate)
+    ├── table-layout     : auto | fixed
+    ├── caption-side     : top | bottom
+    └── empty-cells      : show | hide
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ 11. GENERATED CONTENT, PSEUDO-CLASSES & PSEUDO-ELEMENTS                      │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    ├── Content & Quotes
+    │   ├── content          : normal | none | "string" | attr() | url() | counter()
+    │   └── quotes           : auto | none | "«" "»"
+    │
+    ├── Common Pseudo-Classes (:)
+    │   ├── User Action      : :hover, :active, :focus, :focus-visible, :focus-within
+    │   ├── Form States      : :checked, :disabled, :enabled, :required, :optional,
+    │   │                      :valid, :invalid, :placeholder-shown, :read-only
+    │   ├── Tree & Structural: :first-child, :last-child, :only-child, :nth-child(),
+    │   │                      :nth-of-type(), :empty, :root
+    │   └── Logical Selectors: :is(), :where(), :not(), :has() (parent selector)
+    │
+    └── Common Pseudo-Elements (::)
+    ├── Generated Boxes  : ::before, ::after
+    ├── Text & List      : ::first-letter, ::first-line, ::marker, ::selection
+    └── Form & Media     : ::placeholder, ::backdrop, ::file-selector-button
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ 12. RESPONSIVE DESIGN, VARIABLES, FUNCTIONS & AT-RULES                       │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    ├── At-Rules (@)
+    │   ├── @media           : @media (min-width: 768px), (orientation: landscape),
+    │   │                      (prefers-color-scheme: dark), (prefers-reduced-motion)
+    │   ├── @container       : @container (min-width: 400px) (requires container-type)
+    │   ├── @supports        : @supports (display: grid) (feature query)
+    │   ├── @layer           : @layer reset, base, components, utilities
+    │   ├── @import          : @import "styles.css";
+    │   ├── @font-face       : @font-face { font-family: "..."; src: url(...); }
+    │   └── @property        : @property --my-color { syntax: ""; inherits: false; }
+    │
+    ├── CSS Custom Properties (Variables)
+    │   ├── Declaration      : :root { --primary: #6366f1; --spacing: 1rem; }
+    │   └── Usage & Fallback : color: var(--primary, #000000);
+    │
+    ├── Units Reference
+    │   ├── Absolute         : px, pt, cm, mm, in
+    │   ├── Font-Relative    : rem (root em), em (parent em), ch (char width), ex, lh
+    │   ├── Viewport         : vw, vh, vmin, vmax, dvh (dynamic), svh (small), lvh (large)
+    │   └── Grid & Container : fr (grid fraction), cqw, cqh, cqi, cqb
+    │
+    └── Built-In CSS Functions
+    ├── Math & Sizing    : calc(), min(), max(), clamp(min, preferred, max)
+    ├── Color Functions  : rgb(), rgba(), hsl(), hsla(), oklch(), color-mix()
+    └── Reference & Grid : var(), attr(), url(), repeat(), minmax(), fit-content()
