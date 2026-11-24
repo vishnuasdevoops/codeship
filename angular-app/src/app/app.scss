@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geist", sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER CSS *************************************/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1010;
+    width: 100%;
+    height: 4.05rem;
+}
+
+header {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #d7d6d6;
+    min-height: 3.5rem;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 1440px;
+    height: 40px;
+    padding: 0 1.25rem;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        color: #7740FF;
+        transition: transform 0.15s ease;
+    }
+
+    svg:hover {
+        transform: rotate(-5deg) scale(1.1);
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: #000000;
+        }
+    }
+}
+
+.search-bar {
+    width: 280px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar button {
+    width: 100%;
+    height: 35px;
+    padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+    background-color: #F0F2F3;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-text {
+    text-align: start;
+    color: #6b7280;
+}
+
+.ctrlk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border: 1px solid #d3d3d3;
+    font-weight: 400;
+    color: #7e7e7e;
+    font-size: 12px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 38px;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 4px;
+
+    a {
+        display: flex;
+        align-items: center;
+        padding: 0.25rem 0;
+        color: inherit;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        gap: 5px;
+        font-weight: 500;
+        font-family: inherit;
+        cursor: pointer;
+
+        svg {
+            height: 16px;
+        }
+
+        svg:last-child {
+            height: 12px;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .search-bar {
+        position: static;
+        transform: none;
+        width: auto;
+        flex: 1;
+        max-width: 240px;
+    }
+}
+
+
+.body-container {
+
+    width: 100%;
+    min-height: calc(100vh - 4.05rem);
+    padding: 3rem 0;
+    margin-bottom: 0.5rem;
+
+    display: grid;
+    place-items: center;
+
+    background-color: #ffffff;
+    background-image:
+        linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #ffffff 72%),
+        radial-gradient(ellipse 85% 45% at 20% 0%, rgba(152, 207, 255, 0.72) 0%, transparent 70%),
+        radial-gradient(ellipse 65% 45% at 88% 8%, rgba(255, 224, 174, 0.75) 0%, transparent 65%),
+        radial-gradient(ellipse 55% 35% at 48% 36%, rgba(168, 152, 255, 0.34) 0%, transparent 70%),
+        radial-gradient(ellipse 45% 40% at 10% 35%, rgba(173, 216, 255, 0.45) 0%, transparent 65%);
+    background-repeat: no-repeat;
+}
+
+
+/* HEADER CSS *************************************/
+
+.main-container {
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+
+
+.main-container-one,
+.main-container-two,
+.main-container-three,
+.main-container-four {
+    width: 100%;
+    max-width: 1160px;
+}
+
+.main-container-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    a {
+        background-color: #FFF6D3;
+        padding: 10px 15px;
+        border: 1px solid #ffffff;
+        color: #AD7E0C;
+        border-radius: 30px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+
+        span {
+            text-wrap: nowrap;
+        }
+    }
+
+    svg {
+        fill: #AD7E0C;
+        color: #AD7E0C;
+        height: 16px;
+        flex-shrink: 0;
+    }
+}
+
+.main-container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+    h2 {
+        font-size: clamp(2rem, 6vw, 4rem);
+        line-height: 1.15;
+        text-wrap: balance;
+        margin: 0;
+    }
+
+    p {
+        text-wrap: balance;
+        font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+        margin: 0;
+    }
+}
+
+.main-container-three {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    div:first-child {
+
+        display: flex;
+        padding: 10px 15px;
+        font-size: 15.2px;
+        width: 100%;
+        max-width: 320px;
+        background-color: #F6F7F8;
+        justify-content: space-between;
+        border: 1px solid #c8c8c8;
+        border-radius: 10px;
+        align-items: center;
+        font-family: "Geist Mono", monospace;
+        letter-spacing: 0.05rem;
+        font-weight: 500;
+    }
+
+    div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 15px;
+        font-size: 15.2px;
+        background-color: #000000;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 500;
+        white-space: nowrap;
+
+        svg {
+            height: 16px;
+        }
+    }
+
+    div:last-child {
+        display: flex;
+        align-items: center;
+        font-size: 15.2px;
+        background-color: #7E36FB;
+        border: 1px solid #7E36FB;
+        border-radius: 10px;
+        padding: 10px 15px;
+        gap: 10px;
+        color: #ffffff;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+}
+
+.main-container-four {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #4b4b4b;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+        color: #4b4b4b;
+        text-underline-offset: 4px;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    padding: 10px;
+    row-gap: 24px;
+
+    div {
+        height: stretch;
+    }
+}
+
+.footer-row-container-brand a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+
+    span {
+        font-size: 16px;
+    }
+}
+
+.footer-row-container-brand,
+.footer-row-container-links,
+.footer-row-container-guides,
+.footer-row-container-projects,
+.footer-row-container {
+    padding: 0 12px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-row-container-brand {
+    width: 25%;
+}
+
+
+
+.row div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-row-container-brand ul li:first-child {
+    text-align: balance;
+    display: inline;
+}
+
+.row div h5 {
+
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+.row div ul li {
+    font-size: 14px;
+}
+
+.nav-link-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 1rem;
+    gap: 3px;
+    cursor: pointer;
+    color: #000000;
+    padding: 0.25rem;
+
+    svg {
+        height: 12px;
+        color: black;
+    }
+}
+
+
+@media (max-width :1024px) {
+
+    .github,
+    .logo-links ul {
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width: 479px) {
+
+    .search-bar,
+    .dot {
+        display: none;
+    }
+
+    .docs,
+    .rocket,
+    .copy {
+        justify-content: center;
+        min-width: 320px;
+    }
+
+
+    .footer-row-container-brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-row-container-links,
+    .footer-row-container-guides,
+    .footer-row-container-projects,
+    .footer-row-container {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 1rem;
+    }
+
+    .main-container-four {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media(480px <=width <=767px) {
+
+    .search-bar,
+    .dot {
+        display: none;
+    }
+
+    .nav-link-tab {
+        display: block;
+    }
+
+    .docs,
+    .rocket,
+    .copy {
+        justify-content: center;
+        max-width: 320px;
+    }
+
+    .footer-row-container-brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-row-container-links,
+    .footer-row-container-guides,
+    .footer-row-container-projects,
+    .footer-row-container {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 1rem;
+    }
+
+    .main-container-four,
+    .main-container-three {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .nav-link-tab {
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav-link-tab {
+        display: block;
+    }
+
+    .footer-row-container-brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-row-container-links,
+    .footer-row-container-guides,
+    .footer-row-container-projects,
+    .footer-row-container {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 1rem;
+    }
+}
+
+@media(min-width:1024px) {
+
+    .nav-link-tab {
+        display: none;
+    }
+}
