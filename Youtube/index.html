@@ -15,22 +15,22 @@
 </head>
 
 <body>
+
+    
     <header class="nav-bar">
         <nav>
             <div class="logo-container">
                 <div class="hambrug-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-                        aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                        aria-hidden="true" style="pointer-events: none; ">
                         <path
                             d="M20 5H4a1 1 0 000 2h16a1 1 0 100-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Z">
                         </path>
                     </svg>
                 </div>
                 <div class="youtube-logo">
-                    
                     <svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-svg_yt9" width="93" height="20"
-                        viewBox="0 0 93 20" focusable="false" aria-hidden="true"
-                        style="pointer-events: none;">
+                        viewBox="0 0 93 20" focusable="false" aria-hidden="true" style="pointer-events: none;">
                         <g>
                             <path
                                 d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z"
@@ -60,26 +60,31 @@
                             </path>
                         </g>
                     </svg>
-                    <span class="logo-in">IN</span>
+
                 </div>
+                <span class="logo-in">IN</span>
             </div>
             <div class="search-container">
-                <div>
-                    <input type="text" placeholder="Search">
+                <div class="search-container-input">
+                    <div><input type="text" placeholder="Search">
+                    </div>
+                    <div>
+                        <button type="button" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
+                                <path
+                                    d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z">
+                                </path>
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="search-container-mic">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-                        aria-hidden="true" style="pointer-events: none;  width: 100%; height: 100%;">
+                        aria-hidden="true">
                         <path
-                            d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z">
+                            d="M18.063 14.5a1 1 0 111.73 1A8.998 8.998 0 0113 19.942V22a1 1 0 11-2 0v-2.058A8.999 8.999 0 014.206 15.5l.866-.5.865-.5a7.002 7.002 0 0012.125 0ZM12 1a5 5 0 015 5v5a5 5 0 01-10 0V6a5 5 0 015-5ZM4.572 14.134a1 1 0 011.365.366l-1.731 1a1 1 0 01.366-1.366ZM12 3a3 3 0 00-3 3v5a3 3 0 106 0V6a3 3 0 00-3-3Z">
                         </path>
                     </svg>
                 </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-                    aria-hidden="true">
-                    <path
-                        d="M18.063 14.5a1 1 0 111.73 1A8.998 8.998 0 0113 19.942V22a1 1 0 11-2 0v-2.058A8.999 8.999 0 014.206 15.5l.866-.5.865-.5a7.002 7.002 0 0012.125 0ZM12 1a5 5 0 015 5v5a5 5 0 01-10 0V6a5 5 0 015-5ZM4.572 14.134a1 1 0 011.365.366l-1.731 1a1 1 0 01.366-1.366ZM12 3a3 3 0 00-3 3v5a3 3 0 106 0V6a3 3 0 00-3-3Z">
-                    </path>
-                </svg>
             </div>
             <div class="profile-container">
                 <div class="create-btn">
@@ -102,12 +107,414 @@
                     </svg>
                 </div>
                 <div class="user-profile">
-
+                    <span>V</span>
                 </div>
             </div>
         </nav>
     </header>
 
+
+    <main>
+
+        <section class="sidebar">
+
+            <div class="sidebar-content">
+                <div class="sidebar-content-actions"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                        style="pointer-events: none; ">
+                        <path
+                            d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h5v-8h4v8h5a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0Z">
+                        </path>
+                    </svg><span>Home</span></div>
+                <div class="sidebar-content-actions">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                        aria-hidden="true" style="pointer-events: none; ">
+                        <path
+                            d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z">
+                        </path>
+                    </svg>
+                    <span>Shorts</span>
+                </div>
+                <div class="sidebar-content-actions"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                        style="pointer-events: none; ">
+                        <path
+                            d="M18 1H6a2 2 0 00-2 2h16a2 2 0 00-2-2Zm3 4H3a2 2 0 00-2 2v13a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2ZM3 20V7h18v13H3Zm13-6.5L10 10v7l6-3.5Z">
+                        </path>
+                    </svg>
+                    <span>Subscriptions</span>
+                </div>
+                <div class="sidebar-content-actions">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                        aria-hidden="true" style="pointer-events: none; ">
+                        <path
+                            d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm0 2a9 9 0 016.447 15.276 7 7 0 00-12.895 0A9 9 0 0112 3Zm0 2a4 4 0 100 8 4 4 0 000-8Zm0 2a2 2 0 110 4 2 2 0 010-4Zm-.1 9.001L11.899 16a5 5 0 014.904 3.61A8.96 8.96 0 0112 21a8.96 8.96 0 01-4.804-1.391 5 5 0 014.704-3.608Z">
+                        </path>
+                    </svg>
+                    <span>You</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-container">
+            <section class="content-list">
+                <div class="contents"><span>All</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+                <div class="contents"><span>content</span></div>
+            </section>
+
+            <section class="main-content">
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" alt="UNIQ Technologies" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-videos">
+                    <div class="thumbnail-container">
+                        <img src="imgs/content-img.png" alt="JavaScript Tutorial for beginners in Tamil"
+                            class="thumbnail-img" />
+                        <span class="video-duration">16:33:09</span>
+                    </div>
+                    <div class="video-info">
+                        <a href="#" class="channel-avatar">
+                            <img src="imgs/channel-logo.png" />
+                        </a>
+                        <div class="video-meta">
+                            <h3 class="video-title">
+                                <a href="#">JavaScript Tutorial for beginners in Tamil | Basic to Advanced concepts
+                                    ...</a>
+                            </h3>
+                            <div class="channel-name">
+                                <span>UNIQ Technologies</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#606060" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z" />
+                                </svg>
+                            </div>
+                            <div class="video-stats">
+                                <span>▷ 304K</span>
+                                <span>1y ago</span>
+                            </div>
+                        </div>
+                        <button type="button" class="video-menu-btn" aria-label="More actions">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <h1>Me</h1>
+
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
